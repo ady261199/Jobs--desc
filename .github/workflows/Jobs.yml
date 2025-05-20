@@ -31,6 +31,7 @@ jobs:
 
 
   Job2:
+    needs: Job1
     # The type of runner that the job
     runs-on: ubuntu-latest
     steps:
@@ -41,6 +42,7 @@ jobs:
         run: echo "thisis job 2"
 
   Job3:
+    needs: Job2
     # The type of runner that the job
     runs-on: ubuntu-latest
     steps:
