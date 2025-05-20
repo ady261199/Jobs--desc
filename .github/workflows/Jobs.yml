@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will 
     steps:
       - name: sleep for 5 secs
-        run: sleep 5s
+        run: sleep 60s
         shell: bash
       - name: print
         run: echo "thisis job 1"
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: sleep for 10 secs
-        run: sleep 10s
+        run: sleep 120s
         shell: bash
       - name: print
         run: echo "thisis job 2"
@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: sleep for 3 secs
-        run: sleep 3s
+        run: sleep 180s
         shell: bash
       - name: print
         run: echo "thisis job 3"
