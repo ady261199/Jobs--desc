@@ -26,5 +26,5 @@ jobs:
       - name: print
         run: echo "thisis job 1"
       - name: checking something
-        run: ls ${{GITHUB_WORKSPACE}}
+        run: ${{GITHUB_WORKSPACE}}
 
