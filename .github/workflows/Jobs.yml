@@ -28,5 +28,5 @@ jobs:
       - name: print
         run: echo "thisis job 1"
       - name: Use local hello-world-action
-        uses: $GITHUB_WORKSPACE/workflows/hello.txt
+        run: $GITHUB_WORKSPACE/workflows/hello.txt
 
