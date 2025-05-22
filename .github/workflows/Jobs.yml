@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: sleep for 5 secs
-        run: sleep 60s
+        run: sleep 4s
         shell: bash
       - name: print
         run: echo "thisis job 1"
