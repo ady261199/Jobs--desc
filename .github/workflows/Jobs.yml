@@ -23,5 +23,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: create a file
-        run: echo "thisis job 1" > ${GITHUB_WORKSPACE}/hey.txt
+        run: echo "this is job 1" > ${GITHUB_WORKSPACE}/hey.txt
+      - name: checking
+        run: cat ${GITHUB_WORSPACE}/hey.txt
 
