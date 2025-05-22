@@ -20,13 +20,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: sleep for 5 secs
-        run: sleep 4s
-        shell: bash
       - name: checkout
         uses: actions/checkout@v4
-      - name: print
-        run: echo "thisis job 1"
-      - name: Use local hello-world-action
-        run: $GITHUB_WORKSPACE/hello.txt
+      - name: create a file
+        run: echo "thisis job 1" > ${GITHUB_WORKSPACE}/hey.txt
 
