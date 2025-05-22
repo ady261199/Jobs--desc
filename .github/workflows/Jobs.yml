@@ -25,5 +25,5 @@ jobs:
       - name: create a file
         run: echo "this is job 1" > ${GITHUB_WORKSPACE}/hey.txt
       - name: checking
-        run: cat ${GITHUB_WORSPACE}/hey.txt
+        run: cat ${GITHUB_WORKSPACE}/hey.txt
 
