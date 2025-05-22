@@ -25,6 +25,6 @@ jobs:
         shell: bash
       - name: print
         run: echo "thisis job 1"
-      - name: checking something
-        run: ${{GITHUB_WORKSPACE}}
+      - name: Use local hello-world-action
+        uses: ./.github/actions/hello-world-action
 
